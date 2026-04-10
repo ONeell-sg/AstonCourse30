@@ -6,7 +6,7 @@ import java.util.List;
 
 public class lessonTwo {
 
-    public static void main1(String[] args) {
+    public static void main(String[] args) {
             Product1 product01 = new Product1(
                     "Смартфон Samsung Galaxy S23",
                     LocalDate.of(2024, 3, 15),
@@ -27,9 +27,7 @@ public class lessonTwo {
 
             product01.information1();
             product02.information1();
-        }
-    //задание 2
-    public static void main2(String[] args) {
+
         Product2[] productsArray = new Product2[5];
 
         productsArray[0] = new Product2(
@@ -80,7 +78,27 @@ public class lessonTwo {
         for (int i = 0; i < productsArray.length; i++) {
             productsArray[i].information2();
         }
-    }
+
+        Park centralPark = new Park("Центральный парк развлечений", "г. Москва, ул. Парковая, 15");
+
+        // Добавляем аттракционы через метод addAttraction
+        centralPark.addAttraction("Американские горки", "10:00–22:00", 500.0);
+        centralPark.addAttraction("Колесо обозрения", "09:00–23:00", 300.50);
+        centralPark.addAttraction("Карусель", "11:00–21:00", 200.75);
+        centralPark.addAttraction("Комната страха", "12:00–24:00", 450.25);
+
+        // Выводим информацию обо всех аттракционах парка
+        centralPark.displayAllAttractions();
+
+        // Можно также получить доступ к конкретному аттракциону
+        List<Park.Attraction> attractions = centralPark.attractions;
+        if (!attractions.isEmpty()) {
+            attractions.get(0).displayInfo(); // Информация о первом аттракционе
+        }
+
+        }
+
+
 
     public static class Product1 {
         // Поля класса
@@ -154,7 +172,7 @@ public class lessonTwo {
 
     //задание 3
 
-    public class Park {
+    public static class Park {
         private String name;
         private String location;
 
