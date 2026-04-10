@@ -8,20 +8,20 @@ public class lessonTwo {
 
     public static void main(String[] args) {
             Product1 product01 = new Product1(
-                    "Смартфон Samsung Galaxy S23",
+                    "Смартфон Samsung Galaxy S24",
                     LocalDate.of(2024, 3, 15),
                     "Samsung Electronics",
                     "Южная Корея",
-                    79999.99,
+                    89999.99,
                     true
             );
 
             Product1 product02 = new Product1(
-                    "Кофе Jacobs Monarch",
+                    "Чай чёрный Richard Royal Blueberry",
                     LocalDate.of(2024, 1, 10),
-                    "Jacobs Douwe Egberts",
+                    "RICHARD",
                     "Россия",
-                    499.50,
+                    399.50,
                     false
             );
 
@@ -40,29 +40,29 @@ public class lessonTwo {
         );
 
         productsArray[1] = new Product2(
-                "iPhone 16 Pro Max",
+                "iPhone 16 Pro ",
                 LocalDate.of(2024, 11, 15),
                 "Apple Inc.",
                 "USA",
-                99999.99,
+                109999.99,
                 false
         );
 
         productsArray[2] = new Product2(
-                "Xiaomi 14T",
+                "Xiaomi 15",
                 LocalDate.of(2024, 9, 20),
                 "Xiaomi Corp.",
                 "China",
-                34999.50,
+                64999.90,
                 true
         );
 
         productsArray[3] = new Product2(
-                "Sony WH-1000XM5",
+                "Sony MH-1000XM5",
                 LocalDate.of(2024, 6, 10),
                 "Sony Corporation",
                 "Japan",
-                24990.0,
+                28990.0,
                 false
         );
 
