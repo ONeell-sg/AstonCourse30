@@ -18,7 +18,7 @@ public class lessonThree2 {
         default double calculateTrianglePerimeter(double a, double b, double c) {
                 return a + b + c;
             }
-            String getFillColor();
+             String getFillColor();
             String getBorderColor();
 
             // Универсальный метод вывода информации
