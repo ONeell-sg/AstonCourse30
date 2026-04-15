@@ -89,7 +89,7 @@ public class lessonFive {
         }
     }
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
             Set<Student> students = new HashSet<>();
 
             students.add(new Student("Алена", "ИНС-631", 1, Arrays.asList(4, 5, 4, 3)));
