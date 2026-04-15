@@ -173,7 +173,7 @@ public class lessonThree2 {
             }
         }
 
-    public static class GeometryCalculator {
+
         public static void main(String[] args) {
                 // Создаём коллекцию фигур
                 GeometricShape[] shapes = {
@@ -201,6 +201,6 @@ public class lessonThree2 {
             System.out.printf("Суммарный периметр: %.2f%n", totalPerimeter);
             System.out.printf("Суммарная площадь: %.2f%n", totalArea);
         }
-    }
+
 
 }
